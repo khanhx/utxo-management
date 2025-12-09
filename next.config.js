@@ -5,9 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Uncomment and set basePath if deploying to a subdirectory (e.g., username.github.io/repo-name)
-  // basePath: '/utxo-management',
-  // assetPrefix: '/utxo-management',
+  basePath: '/utxo-management',
+  assetPrefix: '/utxo-management',
 }
 
 module.exports = nextConfig
