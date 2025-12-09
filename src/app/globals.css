@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fintech/Crypto Color Palette */
+  --color-primary: #F59E0B;
+  --color-secondary: #FBBF24;
+  --color-accent: #8B5CF6;
+  --color-bitcoin-orange: #F7931A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 600;
+}
+
+/* Dark Mode Glassmorphism */
+.dark .glass {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(248, 250, 252, 0.1);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Light Mode Glassmorphism */
+.light .glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.glow-primary {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
