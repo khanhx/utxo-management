@@ -31,11 +31,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Rebuild native dependencies
-        run: npm rebuild lightningcss
-
-      - name: Build with Next.js
+      - name: Build with Next.js (without Turbopack)
         run: npm run build
+        env:
+          NODE_ENV: production
 
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
