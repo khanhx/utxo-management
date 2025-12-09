@@ -1,16 +1,20 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  /* Fintech/Crypto Color Palette */
-  --color-primary: #F59E0B;
-  --color-secondary: #FBBF24;
-  --color-accent: #8B5CF6;
-  --color-bitcoin-orange: #F7931A;
-}
+@layer base {
+  :root {
+    /* Fintech/Crypto Color Palette */
+    --color-primary: #F59E0B;
+    --color-secondary: #FBBF24;
+    --color-accent: #8B5CF6;
+    --color-bitcoin-orange: #F7931A;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk), sans-serif;
-  font-weight: 600;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk), sans-serif;
+    font-weight: 600;
+  }
 }
 
 /* Dark Mode Glassmorphism */
