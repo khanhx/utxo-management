@@ -31,7 +31,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build with Next.js (without Turbopack)
+      - name: Rebuild native modules for Linux
+        run: npm rebuild
+
+      - name: Build with Next.js
         run: npm run build
         env:
           NODE_ENV: production
